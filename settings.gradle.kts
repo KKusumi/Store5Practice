@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Store5Practice"
 include(":app")
+include(":core:network")

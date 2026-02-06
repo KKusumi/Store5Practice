@@ -19,6 +19,14 @@ room = "2.6.1"
 # Lint
 androidLint = "31.9.0"
 
+# Network
+retrofit = "2.11.0"
+retrofitKotlinxSerializationJson = "1.0.0"
+okhttp = "4.12.0"
+kotlinxSerializationJson = "1.8.0"
+kotlinxDatetime = "0.6.2"
+coil = "2.7.0"
+
 [libraries]
 # Gradle Plugins (for build-logic)
 android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
@@ -60,6 +68,16 @@ android-lint-api = { group = "com.android.tools.lint", name = "lint-api", versio
 # Kotlin
 kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlin" }
 
+# Network
+retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-kotlin-serialization = { group = "com.jakewharton.retrofit", name = "retrofit2-kotlinx-serialization-converter", version.ref = "retrofitKotlinxSerializationJson" }
+okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+kotlinx-datetime = { group = "org.jetbrains.kotlinx", name = "kotlinx-datetime", version.ref = "kotlinxDatetime" }
+coil-kt = { group = "io.coil-kt", name = "coil", version.ref = "coil" }
+coil-kt-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+coil-kt-svg = { group = "io.coil-kt", name = "coil-svg", version.ref = "coil" }
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
@@ -67,6 +85,7 @@ android-test = { id = "com.android.test", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 room = { id = "androidx.room", version.ref = "room" }
