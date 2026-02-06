@@ -21,6 +21,10 @@ dependencies {
     compileOnly(libs.android.gradlePlugin)
     compileOnly(libs.kotlin.gradlePlugin)
     compileOnly(libs.compose.gradlePlugin)
+    compileOnly(libs.ksp.gradlePlugin)
+    compileOnly(libs.room.gradlePlugin)
+    compileOnly(libs.hilt.gradlePlugin)
+    compileOnly(libs.android.lint.api)
 }
 
 gradlePlugin {
@@ -40,6 +44,26 @@ gradlePlugin {
         register("androidLibraryCompose") {
             id = "store5practice.android.library.compose"
             implementationClass = "AndroidLibraryComposeConventionPlugin"
+        }
+        register("androidHilt") {
+            id = "store5practice.android.hilt"
+            implementationClass = "AndroidHiltConventionPlugin"
+        }
+        register("androidRoom") {
+            id = "store5practice.android.room"
+            implementationClass = "AndroidRoomConventionPlugin"
+        }
+        register("androidTest") {
+            id = "store5practice.android.test"
+            implementationClass = "AndroidTestConventionPlugin"
+        }
+        register("androidLint") {
+            id = "store5practice.android.lint"
+            implementationClass = "AndroidLintConventionPlugin"
+        }
+        register("jvmLibrary") {
+            id = "store5practice.jvm.library"
+            implementationClass = "JvmLibraryConventionPlugin"
         }
     }
 }
