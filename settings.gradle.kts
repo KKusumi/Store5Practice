@@ -20,6 +20,9 @@ dependencyResolutionManagement {
     }
 }
 
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 rootProject.name = "Store5Practice"
 include(":app")
+include(":core:model")
 include(":core:network")
